@@ -288,7 +288,7 @@ variable "custom_environment_secrets" {
   description = "List of additional secrets the container will use (list should contain maps with `name` and `valueFrom`)"
   type        = list(object({
     name  = string
-    value = string
+    valueFrom = string
   }))
   default     = []
 }
